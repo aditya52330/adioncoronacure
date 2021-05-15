@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  color: violet;
+  background-color: rgb(17, 9, 53);
+  padding: 10px;
+  min-height: 30px;
+  border-bottom: tomato 5px double;
+}
+
+header #branding {
+  float: left;
+  margin: 0;
+}
+
+header #branding h1 {
+  margin: 0;
+  padding: 2px;
+}
+
+.adi {
+  list-style: none;
+  float: right;
+  padding-top: 15px;
+}
+
+.adi li {
+  display: inline;
+  padding: 0 20px 0 20px;
+  float: left;
+}
+
+.adi li a {
+  color: violet;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: larger;
+}
+
+.adi li a:hover {
+  color: teal;
+  text-decoration: none;
+  font-weight: 30px;
+  padding: 5px;
+}
+
+header nav {
+  float: right;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#home div {
+  background-color: slateblue;
+  text-align: center;
+  font-size: xx-large;
+  color: turquoise;
+  padding: 28px;
+}
+
+#about {
+  padding: 20px;
+  margin: 10px;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2pc;
+}
+
+#about p {
+  padding: 20px;
+  margin: 5px;
+  border: firebrick 5px double;
+  font-size: 2pc;
+}
+
+#services {
+  padding: 30px;
+  background-color: rgb(29, 18, 133);
+  color: gold;
+}
+
+#services h2 {
+  text-align: center;
+  font-size: 2pc;
+}
+
+#services ul {
+  padding: 10px;
+  border: goldenrod 10px solid;
+  list-style: none;
+}
+
+#services ul li {
+  padding: 10px;
+  border: greenyellow 5px double;
+  margin: 10px;
+}
+
+.pro {
+  display: block;
+  text-align: end;
+  font-size: 1.5pc;
+}
+
+#roast h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+#roast {
+  background-color: floralwhite;
+  padding: 30px;
+}
+
+#roast ul {
+  border: green 15px ridge;
+  padding: 10px;
+  list-style: none;
+}
+
+#roast ul li {
+  border: rgb(24, 214, 135) 5px dashed;
+  padding: 10px;
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(97, 18, 224);
+  padding: 20px;
+  color: yellowgreen;
+  font-size: 2pc;
+}
+
+@media (max-width: 600px) {
+  #about p {
+    padding: 10px;
+    margin: 5px;
+    border: firebrick 5px double;
+    font-size: 20px;
+  }
+  header #branding {
+    text-align: center;
+    /* padding-left: 65px; */
+    text-transform: uppercase;
+    float: none;
+    text-align: center;
+  }
+  .adi li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    padding: 1px;
+    float: none;
+  }
+  .adi {
+    float: none;
+    padding-right: 5px;
+  }
+  .adi li a:hover {
+    color: teal;
+    text-decoration: none;
+  }
+}
